@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Recursion.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Recursion/Iteration App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Enter number to test different types of recursion and iteration to solve a factorial" FontSize="Title" Padding="30,10,30,10"/>
+        <Entry x:Name="numberInput" Text="1"/>
+        
+        <Label Text="Direct Recursion" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Factorial" FontSize="16" Padding="30,0,30,0"/>
+        <Button x:Name="directRecursionButton" Text="Calculate Factorial" Clicked="directRecursionButtonClick" WidthRequest="200"/>
+        <Label x:Name="directRecusionCalculation" Text="" FontSize="16" Padding="30,0,30,0"/>
+
+        <Label Text="Indirect Recursion" FontSize="Title" Padding="30,10,30,10"/>
+        <Button x:Name="indirectRecursionButton" Text="Calculate Factorial" Clicked="indirectRecursionButtonClick" WidthRequest="200"/>
+        <Label x:Name="indirectRecusionCalculation" Text="" FontSize="16" Padding="30,0,30,0"/>
+
+        <Label Text="Iteration" FontSize="Title" Padding="30,10,30,10"/>
+        <Button x:Name="iterationButton" Text="Calculate Factorial" Clicked="iterationButtonClick" WidthRequest="200"/>
+        <Label x:Name="iterationCalculation" Text="" FontSize="16" Padding="30,0,30,0"/>
+    </StackLayout>
+
+</ContentPage>
