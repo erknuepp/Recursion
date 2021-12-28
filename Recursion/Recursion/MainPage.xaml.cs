@@ -68,7 +68,7 @@
             {
                 return 1;
             }
-            return number * GetFactorialDirectRecusion(number - 1);
+            return number * GetFactorialIndirectRecusion(number - 1);
         }
     }
 }
